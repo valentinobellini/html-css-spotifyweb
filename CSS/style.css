@@ -1,0 +1,185 @@
+/* general rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#wrapper {
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+#fix-banner {
+    position: relative;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#fix-banner a {
+    font-size: 14px;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+
+
+/* left sidebar section */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 250px;
+    background-color: #000000;
+    color: white;
+}
+
+#sidebar * {
+    color: #a3a3a3;
+}
+
+
+#logo,
+#icon-list li,
+#sidebar-up h4,
+#playlist,
+#sidebar-down {
+    margin-left: 20px;
+}
+
+
+/* sidebar upper section */
+#logo {
+    max-width: 60%;
+    margin-top: 20px;
+}
+
+#icon-list {
+    margin-top: 20px;
+}
+
+#icon-list li {
+    padding-top: 20px;
+}
+
+.fa-solid {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.fa-lines-leaning {
+    /* transform: scaleX(-1); */
+}
+
+
+#sidebar-up h4 {
+    margin-top: 30px;
+    color: white;
+}
+
+
+#playlist li {
+    padding-top: 20px;
+}
+
+.fa-plus {
+    background-color: gray;
+}
+
+
+/* sidebar bottom section */
+#sidebar-down a:first-child {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+#sidebar-down a:nth-child(2) {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+#username {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    overflow: auto;
+    height: 100%;
+    width: calc(100% - 250px);
+    background-color: #141922;
+}
+
+#footer {
+    height: 100px;
+    background-color: #282828;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************
+MEDIA QUERY
+************ */
+
+
+
+@media screen and (max-width:480px) {
+
+    /* blocco navigazione principale */
+    #sidebar {
+        width: 80px;
+    }
+
+
+    /* blocco di contenuto principale */
+    #wrapper main {
+        width: calc(100% - 80px);
+    }
+    
+    .hidden-sm {
+        display: none;
+    }
+
+
+}
