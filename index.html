@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Document</title>
 </head>
@@ -25,24 +30,28 @@
                 <a class="hidden-sm" href="">
                     <img id="logo" src="./img/logo.svg" alt="">
                 </a>
+                <a href="">
+                    <img id="logo-small" src="./img/logo-small.svg" alt="">
+                </a>
 
                 <!-- navigation list icons -->
                 <ul id="icon-list">
                     <li>
-                        <a href=""><i class="fa-solid fa-house"></i>Home</a>
+                        <a href=""><img id="home" class="icon" src="./img/home.svg" alt=""> Home</span></a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i>Cerca</a>
+                        <a href=""> <img class="icon" src="./img/search.svg" alt=""> <span class="hidden-sm">Cerca</span> </a>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-lines-leaning"></i>La tua libreria</a>
+                        <a href=""> <img class="icon" src="./img/libreria.svg" alt=""> <span class="hidden-sm">La tua
+                                libreria</span></a>
                     </li>
                 </ul>
 
                 <!-- playlist list -->
-                 <h4>PLAYLIST</h4>
+                <h4 class="hidden-sm">PLAYLIST</h4>
 
-                <ul id="playlist">
+                <ul id="playlist" class="hidden-sm">
                     <li>
                         <a href=""><i class="fa-solid fa-square-plus"></i>Crea Playlist</a>
                     </li>
@@ -73,11 +82,11 @@
             <div id="sidebar-down">
                 <a href="">
                     <span><i class="fa-solid fa-circle-down"></i></span>
-                    <span> Installa app</span>
+                    <span class="hidden-sm">Installa app</span>
                 </a>
                 <a href="">
                     <span><i class="fa-solid fa-user"></i></span>
-                    <span id="username">John Doe</span>
+                    <span id="username" class="hidden-sm">John Doe</span>
                 </a>
             </div>
         </nav>
@@ -85,65 +94,148 @@
 
         <!-- main content section -->
         <main>
+
+
             <div id="fix-banner">
                 <a href="">EFFETTUA L'UPGRADE</a>
 
             </div>
 
-            <div id="categories">
-                <ul>
+            <div id="categories-wrapper">
+                <ul id="categories">
                     <li>
-                        <a href=""></a>
+                        <a class="hover-white" href="">IN EVIDENZA</a>
+                        <div id="green-bar"></div>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a class="hover-white" href="">PODCAST</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a class="hover-white" href="">CLASSIFICHE</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a class="hover-white" href="">GENERI E MOOD</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a class="hover-white" href="">NUOVE USCITE</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a class="hover-white" href="">SCOPRI</a>
                     </li>
                 </ul>
 
             </div>
 
             <section id="section-1">
-                <h2></h2>
+                <h2 class="section-title">Recently played</h2>
+
                 <div id="section-1-wrapper">
-                    <div class="album"></div>
-                    <div class="album"></div>
-                    <div class="album"></div>
-                    <div class="album"></div>
-                    <div class="album"></div>
-                    <div class="album"></div>
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="album-icon-hover">
+                                <i id="hover-icon" class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4 class="album-title">Heavy Metal</h4>
+                        <span class="album-subtitle">Subtitle</span>
+                    </div>
+
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./img/stranger.jpeg" alt="">
+                            <div class="album-icon-hover">
+                                <i id="hover-icon" class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4 class="album-title">Stranger Things vol.1 (a Netflix Original Series Soundtrack)</h4>
+                        <span class="album-subtitle">Kyle Dixon & Michael Stein</span>
+                    </div>
+
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <div class="album-icon-hover">
+                                <i id="hover-icon" class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4 class="album-title">A Quiet Place </h4>
+                        <span class="album-subtitle">Subtitle</span>
+                    </div>
+
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./img/split.jpeg" alt="">
+                            <div class="album-icon-hover">
+                                <i id="hover-icon" class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4 class="album-title">Split</h4>
+                        <span class="album-subtitle">Subtitle</span>
+                    </div>
+
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./img/cure.jpeg" alt="">
+                            <div class="album-icon-hover">
+                                <i id="hover-icon" class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4 class="album-title">A Cure for Wellness</h4>
+                        <span class="album-subtitle">Subtitle</span>
+                    </div>
+
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./img/sinister.jpeg" alt="">
+                            <div class="album-icon-hover">
+                                <i id="hover-icon" class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <h4 class="album-title">Sinister</h4>
+                        <span class="album-subtitle">Subtitle</span>
+                    </div>
                 </div>
             </section>
 
             <section id="section-2">
-                <h2></h2>
-                <h6></h6>
+                <h2 class="section-title">Creato pr John Doe</h2>
+                <h4 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h4>
                 <div id="section-2-wrapper">
-                    <div class="album"></div>
-                    <div class="album"></div>
-                </div>
 
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./img/radar.jpeg" alt="">
+                        </div>
+                        <h4 class="album-title">Release Radar</h4>
+                    </div>
 
+                    <div class="album">
+                        <div class="album-img">
+                            <img src="./img/mixdaily.jpeg" alt="">
+                        </div>
+                        <h4 class="album-title">Daily Mix 1</h4>
+                    </div>
             </section>
 
             <section id="section-3">
-                <h2></h2>
-                <h6></h6>
-                <div id="section-3-wrapper">
-                    <div class="album"></div>
-                    <div class="album"></div>
-                </div>
+                <h2 class="section-title">Creato pr John Doe</h2>
+                <h4 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h4>
+                <div id="section-2-wrapper">
+
+                    <div class="album">
+                        <div class="album-img album-img-section-3">
+                            <img src="./img/youg.jpeg" alt="">
+                        </div>
+                        <h4 class="album-title">Release Radar</h4>
+                    </div>
+
+                    <div class="album">
+                        <div class="album-img album-img-section-3">
+                            <img src="./img/einaudi.jpeg" alt="">
+                        </div>
+                        <h4 class="album-title">Daily Mix 1</h4>
+                    </div>
             </section>
 
         </main>
@@ -152,10 +244,64 @@
 
     <!-- bottom section footer/player  -->
     <div id="footer">
-        <div id="footer-left"></div>
-        <div id="footer-center"></div>
-        <div id="footer-right"></div>    
+        <div id="footer-left">
+            <div id="footer-img">
+                <img src="./img/sinister.jpeg" alt="">
+            </div>
+            <div id="footer-text">
+                <h4 id="footer-title">Sinister</h4>
+                <span id="footer-subtitle">Brano nome</span>
+            </div>
+            <div id="footer-let-icon-wrapper">
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-regular fa-folder"></i></a>
+            </div>
+        </div>
+
+        <div id="footer-center">
+            <div id="player">
+                <div id="control-section">
+                    <button><i class="fa-solid fa-shuffle footer-icon"></i></button>
+                    <button><i class="fa-solid fa-step-backward footer-icon"></i></button>
+                    <button><i class="fa-solid fa-play footer-icon"></i></button>
+                    <button><i class="fa-solid fa-step-forward footer-icon"></i></button>
+                    <button><i class="fa-solid fa-repeat footer-icon"></i></button>
+                </div>
+                <div id="bar-section">
+                    <span class="player-time">0:25</span>
+
+                    <!-- progress bar -->
+                    <div id="progress-bar-wrapper">
+                        <div id="progress-bar"></div>
+                        <div id="progress-fill"></div>
+                        <div id="progress-handle"></div>
+                    </div>
+
+                    <span class="player-time">4:35</span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="footer-right">
+            <a href="">
+                <i class="fa-solid fa-bars footer-right-icon"></i>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-desktop footer-right-icon"></i>
+            </a>
+            <a href="">
+                <i class="fa-solid fa-volume-high footer-right-icon"></i>
+            </a>
+            <div id="volume-bar-wrapper">
+                <div id="volume-bar"></div>
+                <div id="volume-fill"></div>
+                <div id="volume-handle"></div>
+            </div>
+        </div>
     </div>
-    
+
 </body>
+
 </html>
