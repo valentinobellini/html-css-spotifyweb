@@ -106,16 +106,15 @@ left sidebar section general  */
 }
 
 
-
+#sidebar-up {
+    overflow: auto;
+    height: 100%;
+}
 
 
 #sidebar-up h4 {
     margin-top: 30px;
     color: white;
-}
-
-#playlist {
-    overflow: auto;
 }
 
 
@@ -170,6 +169,7 @@ main {
     top: 0;
     height: 100px;
     background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 #fix-banner a {
@@ -199,6 +199,8 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    row-gap: 10px;
+    
 }
 
 #categories a {
@@ -670,8 +672,11 @@ footer section general */
 
     /* ******************************
     left sidebar section general */
+
+
     #sidebar {
         width: 80px;
+        /* align-items: center; */
     }
 
     /* sidebar upper section */
@@ -680,8 +685,32 @@ footer section general */
     }
 
     #logo-small {
-        display: block;
+        margin: 20px auto;
+        max-width: 35%;
     }
+
+
+    #logo-small {
+        display: block;
+        
+    }
+
+    #icon-list li {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+
+    #sidebar-down {
+        padding-left: 0px;
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    #sidebar-down a:first-child {
+        margin-right: 0px;
+    }
+
 
     #wrapper main {
         width: calc(100% - 80px);
